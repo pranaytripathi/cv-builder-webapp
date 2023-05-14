@@ -1,0 +1,39 @@
+[{
+    "company": "Skycanner",
+    "title": "Senior Software Engineer",
+    "date": "May 2021 - Present",
+    "location": "London, UK",
+    "descriptionList": [
+        "Design and developed several services which constitute building the in-house payment platform for the company.",
+        "Worked with different team and product owner to gather the requirements for the new payment platform and worked with team to design web service APIs to interact with customer journey of payment including saving-retrieving card and payment forwarding to different merchants.",
+        "Worked on web services written using Java, Dropwizard framework and having GRPC and REST API interaction with other systems.",
+        "Worked on creating reusable payment form using React, Redux and Typescript.",
+        "All these components are deployed using Kubernetes and Docker in AWS."
+    ],
+    "skills": ["Distributed Systems", "gRPC", "React.js", "Amazon Web Services (AWS)", "Node.js", "Java"]
+}, {
+    "company": "Kindred Group plc",
+    "title": "Full Stack Engineer",
+    "date": "May 2019 - Apr 2021",
+    "location": "Stockholm, Sweden",
+    "descriptionList": [
+        "Designed, developed and delivered features for frontend using React, Redux, Hooks and SCSS.",
+        "Built backend API creation using Sprint Boot, Reactive Spring and Spring JDBC.",
+        "Helped building architectural design and overall system design for project.",
+        "Implementing micro frontend architecture in the organization to collectively integrate several apps while improving loading performance.",
+        "Built several frontend modules and reusable components to unify the style components for the organization."
+    ],
+    "skills": ["Redux", "React.js", "Node.js", "Java", "Spring Boot", "SCSS"]
+}, {
+    "company": "Syntel",
+    "title": "Software Engineer",
+    "date": "Dec 2013 - May 2019",
+    "location": "Glasgow, United Kingdom",
+    "descriptionList": [
+        "Worked for a UK based bank and designed their Internet Banking website using React, Redux and Webpack.",
+        "Built the internet banking website for the banking system to migrate legacy app into React framework.",
+        "Developed several independent components and microsites to based on the requirement of several compliances and regulations.",
+        "Worked on the backend to build Java/Jersey based web services to interact with transactions and account details of customer."
+    ],
+    "skills": ["Redux", "React.js", "Node.js", "Java", "Spring Boot", "SCSS"]
+}]
