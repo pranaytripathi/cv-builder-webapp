@@ -1,8 +1,9 @@
-import { Card, CardContent, Typography, CardActions, Button } from '@mui/material';
+import useFetchExperience from '@/hooks/useFetchExperience';
+import { Card, CardContent, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import React from 'react';
 
-interface ExperiencePropTypes{
+export type ExperienceTypes = {
     title: string;
     company: string;
     date: string;
@@ -10,9 +11,10 @@ interface ExperiencePropTypes{
     skills: string[];
 }
 
-export default function Experience({ experience } : { experience: ExperiencePropTypes[] }) {
+export default function Experience() {
+    const { experience } = useFetchExperience();
     return <Grid container spacing={8}>
-        {experience?.map?.((x: ExperiencePropTypes, index : number) =>
+        {experience?.map?.((x: ExperienceTypes, index: number) =>
             <Grid xs={6} key={index}>
                 <Card sx={{ minWidth: "50%", backgroundColor: "#d0d1d3", height: "100%" }}>
                     <CardContent>
@@ -24,7 +26,7 @@ export default function Experience({ experience } : { experience: ExperienceProp
                         </Typography>
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
                             {x.date}
-                        </Typography>s
+                        </Typography>
                         <Typography variant="body2" component="div">
                             <ul>
                                 {x.descriptionList.map((d: string, index: number) =>
@@ -32,9 +34,6 @@ export default function Experience({ experience } : { experience: ExperienceProp
                                         {d}
                                     </li>)}
                             </ul>
-                        </Typography>
-                        <Typography component="div">
-                            Certifications
                         </Typography>
                     </CardContent>
                 </Card>
