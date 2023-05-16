@@ -1,11 +1,12 @@
-import { ExperienceTypes } from '@/components/Experience';
+
+import { ExperienceResponse } from '@/types/experience';
 import api, { METHOD } from '@/utils/api';
 import { useEffect, useState } from 'react';
 
-type ExperienceResponse = Array<ExperienceTypes>;
 
 const getExperienceData = async (): Promise<ExperienceResponse> => {
-    const response = await api<ExperienceResponse>({ method: METHOD.GET, uri: "experience.json" });
+    const response = await api<ExperienceResponse>({ 
+        method: METHOD.GET, uri: "json/experience.json" });
     return response;
 }
 

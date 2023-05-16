@@ -1,15 +1,8 @@
 import useFetchExperience from '@/hooks/useFetchExperience';
+import { ExperienceTypes } from '@/types/experience';
 import { Card, CardContent, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import React from 'react';
-
-export type ExperienceTypes = {
-    title: string;
-    company: string;
-    date: string;
-    descriptionList: string[];
-    skills: string[];
-}
 
 export default function Experience() {
     const { experience } = useFetchExperience();
